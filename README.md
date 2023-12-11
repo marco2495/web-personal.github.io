@@ -1,57 +1,92 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fleerob%2Fleerob.io)
+![Captura de pantalla 2023-08-16 152704](https://github.com/jeandv/my-next-portfolio/assets/90219458/9ce46345-0d5c-43cb-9be8-7d8d1387af0a)
 
-# leerob.io
+⚡My new portfolio with Blog using Next.js 13 + TypeScript, Tailwind CSS and Sanity CMS⚡
 
-- **Framework**: [Next.js](https://nextjs.org/)
-- **Database**: [Postgres](https://vercel.com/postgres)
-- **Authentication**: [NextAuth.js](https://next-auth.js.org)
-- **Deployment**: [Vercel](https://vercel.com)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com)
-- **Analytics**: [Vercel Analytics](https://vercel.com/analytics)
+I'm a passionate developer with +2 year of work experience in JavaScript/TypeScript, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16 years old. I love what I do and I help others with what I can.
 
-## Running Locally
+I also use in web, mobile and desktop development Next.js, Angular, Ionic and Electron, to add I also have experience working in Backend with Node and in the UX design part with Figma always implementing good practices in prototyping and coding, clean architecture, SOLID principles, pixel perfect and agile methodologies for example such as the SCRUM framework.
 
-This application requires Node.js v18.17+.
+I am currently learning the way to be a DevOps, the reason why I am interested in this area is to know something different from programming and at the same time very useful in the present and in the future, in short I take it as an investment in myself in case I have a job that requires this skill.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Autor 🤠
+
+· Email: jeanrdev@gmail.com <br>
+· [CV](https://rxresu.me/jeandv/cv-jean-rondon) <br>
+· [Portfolio](https://jeandv.vercel.app) <br>
+· [LinkedIn](https://linkedin.com/in/jeandv) <br>
+· [GitHub](https://github.com/jeandv) <br>
+· [Whatsapp](https://walink.co/2369d5)
+
+## Website URL 👁‍🗨
+
+✔ Here! -> [jeandv.vercel.app](https://jeandv.vercel.app)
+
+## Used tech tools 🛠️
+
+· Tailwind CSS <br>
+· Framer Motion <br>
+· Mantine <br>
+· TypeScript <br>
+· Next.js <br>
+· Sanity <br>
+
+## Used dev tools 🛠️
+
+· ESlint <br>
+· Postcss <br>
+· Prettier <br>
+
+## Instalation 💻
+
+✔ Follow the steps in: "Getting Started" 👇
+
+## Contact 📧
+
+✔ If you want to contact me you can write me to jeanrdev@gmail.com or to my [LinkedIn](https://www.linkedin.com/in/jeandv/) for inquiries or you can also talk to me by [Whatsapp](https://walink.co/2369d5)
+
+# Preview 🔎
+
+![40shots_so](https://github.com/jeandv/my-next-portfolio/assets/90219458/da737d03-e841-4ce0-a9e3-e5f187073412)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Getting Started
+
+First, run the development server:
 
 ```bash
-git clone https://github.com/leerob/leerob.io.git
-cd leerob.io
-bun install
-bun run setup # Remove all of my personal information
-bun dev
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
 ```
 
-Create a `.env.local` file similar to [`.env.example`](https://github.com/leerob/leerob.io/blob/main/.env.example).
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Database Schema
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-```sql
-CREATE TABLE redirects (
-  id SERIAL PRIMARY KEY,
-  source VARCHAR(255) NOT NULL,
-  destination VARCHAR(255) NOT NULL,
-  permanent BOOLEAN NOT NULL
-);
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-CREATE TABLE guestbook (
-  id SERIAL PRIMARY KEY,
-  email VARCHAR(255) NOT NULL,
-  body TEXT NOT NULL,
-  created_by VARCHAR(255) NOT NULL,
-  created_at TIMESTAMP NOT NULL,
-  updated_at TIMESTAMP
-);
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-CREATE TABLE views (
-  slug VARCHAR(255) PRIMARY KEY,
-  count INT NOT NULL
-);
-```
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## License
+## Learn More
 
-1. You are free to use this code as inspiration.
-2. Please do not copy it directly.
-3. Crediting the author is appreciated.
+To learn more about Next.js, take a look at the following resources:
 
-Please remove all of my personal information (blog posts, images, etc.) by running `bun run setup`.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
