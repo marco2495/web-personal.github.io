@@ -1,12 +1,11 @@
 import logo from './logo2.svg';
 import './App.css';
-import './components/nav-bar'
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        {/* <p>
           Hola. Estoy trabajando en la construcción de esta página.
         </p> 
         <br/>
@@ -18,9 +17,8 @@ function App() {
           rel="noopener noreferrer"
         >
           Pícale aquí
-        </a>
+        </a> */}
       </header>
-      
     </div>
   );
 }
