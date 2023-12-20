@@ -1,19 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import NavbarTailwind from './components/nav-bar';
+import './App.css';
+
+import Navbar from './nav-bar-vertical';
+import { RedNeuronal } from './red-neuronal';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const MiComponente = () => {
+function Home() {
   return (
-    <div>
-      <NavbarTailwind />
-      <App />
-    </div>
+    <main className='z-1'>
+
+      {/* Resto del contenido */}
+      <Navbar/>
+      {/* Contenido de RedNeuronal como fondo */}
+      <RedNeuronal />
+    </main>
   );
-};
+}
+
 root.render(
-  <MiComponente/>
+  <Home/>
 );
 
 
