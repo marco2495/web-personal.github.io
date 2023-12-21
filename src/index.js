@@ -1,25 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './App.css';
-
-import Navbar from './nav-bar-vertical';
-import { RedNeuronal } from './red-neuronal';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-function Home() {
-  return (
-    <main className='z-1'>
-
-      {/* Resto del contenido */}
-      <Navbar/>
-      {/* Contenido de RedNeuronal como fondo */}
-      <RedNeuronal />
-    </main>
-  );
-}
-
 root.render(
-  <Home/>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
 
-
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
