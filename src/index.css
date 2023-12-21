@@ -2,7 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-body, html {
+body, html, :root{
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
